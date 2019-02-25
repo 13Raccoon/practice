@@ -20,24 +20,11 @@ body {
   }
 }
 
-@media (max-width: 567px) {
-  .container {
-    max-width: 550px;
-    width: 95%;
-  }
-}
-
 .button {
   border-radius: 10px;
   background-color: #ffd200;
   border: none;
   padding: 18px 30px;
-}
-
-@media (max-width: 567px) {
-  .button {
-    padding: 9px 15px;
-  }
 }
 
 .navbar {
@@ -91,10 +78,6 @@ body {
   text-decoration: none;
   margin-top: 10px;
   display: inline-block;
-}
-
-.navbar__phone:hover {
-  text-decoration: underline;
 }
 
 @media (max-width: 768px) {
