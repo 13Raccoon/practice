@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Museo Sans Light', sans-serif;
 }
 
 .container {
@@ -89,6 +89,7 @@ body {
 .navbar__phone {
   font-size: 20px;
   font-weight: 400;
+  font-family: 'Museo Sans Bold';
   color: #333333;
   text-decoration: none;
   margin-top: 9px;
@@ -127,6 +128,7 @@ body {
   font-weight: 400;
   display: block;
   margin-bottom: 50px;
+  font-family: 'Museo Sans Bold';
 }
 
 .text-about {
@@ -134,6 +136,7 @@ body {
   font-weight: 400;
   line-height: 65px;
   margin-bottom: 69px;
+  font-family: 'Museo Sans Bold';
 }
 
 .block-low {
@@ -202,5 +205,21 @@ body {
   .block-low {
     margin-bottom: 20px;
   }
+}
+
+@font-face {
+  font-family: 'Museo Sans Light';
+  src: url("../fonts/MuseoSansCyr/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseoSansCyr/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyr/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyr/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Bold';
+  src: url("../fonts/MuseoSansCyr/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSansCyr/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyr/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyr/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 /*# sourceMappingURL=style.css.map */
