@@ -1,3 +1,6 @@
+*
+  box-sizing: border-box
+
 body 
   font-family: 'Museo Sans Light', sans-serif
 
@@ -21,7 +24,18 @@ body
   background-color: $main-color
   border: none
   padding: 19px 30px 17px 30px
+  transition: 0.2s
+  &:hover
+    border: 1px solid red
+    background-color: lighten($main-color, 20%)
+    cursor: pointer
 
 @media (max-width: 567px)
   .button
     padding: 9px 15px
+
+.section
+  padding: 90px 0
+
+.input
+  
