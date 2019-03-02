@@ -26,6 +26,7 @@
   &-button
     width: 100%
     min-height: 70px
+    margin-bottom: 31px
 
 .offer-subtitle
   display: block
@@ -43,6 +44,26 @@
   &:first-child
     margin-right: 10px
   
+.support
+  display: flex
+  justify-content: space-between
+
+.support-text
+  width: 50%
+  line-height: 24px
+  &:first-child
+    margin-right: 69px
+  
+
+.support__phone
+  font-size: 20px
+  font-weight: 400
+  font-family: 'Museo Sans Bold'
+  color: $text-color
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+  
 @media (max-width: 1200px)
   .offer
     background-size: cover
@@ -51,6 +72,15 @@
     &-input
       width: 100%
       margin-bottom: 10px
+  .support
+    display: flex
+    flex-direction: column
+    width: 100%
+    &-text
+      width: 100%
+      margin: 0 0 18px 0
+      
+      
 
 @media (max-width: 768px)    
   .offer
@@ -58,6 +88,14 @@
     &-block
       width: 100%
       padding-right: 0
+  .support
+    display: flex
+    flex-direction: column
+    width: 100%
+    &-text
+      
+      margin: 0 0 10px 0
+      align-items: center
     
 
 
