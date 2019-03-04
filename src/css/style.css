@@ -57,6 +57,22 @@ body {
   padding: 90px 0;
 }
 
+.portfolio__arrows {
+  max-width: 120px;
+  margin: auto;
+  margin-top: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.arrow__left:hover, .arrow__right:hover {
+  cursor: pointer;
+}
+
 .navbar {
   padding: 7px 0;
 }
@@ -444,5 +460,9 @@ body {
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
   margin-bottom: 100px;
+}
+
+.slider__img {
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
