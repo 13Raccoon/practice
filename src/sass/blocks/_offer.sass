@@ -50,19 +50,22 @@
 
 .support-text
   width: 50%
+  font-size: 15px
+  font-weight: 400
   line-height: 24px
   &:first-child
     margin-right: 69px
   
 
 .support__phone
-  font-size: 20px
+  font-size: 15px
   font-weight: 400
+  line-height: 24px
   font-family: 'Museo Sans Bold'
   color: $text-color
   text-decoration: none
   &:hover
-    text-decoration: underline
+    cursor: pointer
   
 @media (max-width: 1200px)
   .offer
@@ -79,6 +82,13 @@
     &-text
       width: 100%
       margin: 0 0 18px 0
+
+@media (max-width: 850px)    
+  .offer
+    background: #fff
+    &-block
+      width: 100%
+      padding-right: 0
       
       
 

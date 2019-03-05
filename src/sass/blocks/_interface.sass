@@ -9,7 +9,10 @@ body
   margin: auto
 @media (max-width: 1200px)
   .container
-    width: 960px
+    max-width: 970px
+    width: 95%
+
+
 @media (max-width: 768px)    
   .container
     max-width: 750px
@@ -20,20 +23,44 @@ body
     width: 95%
 
 .button
+  font-size: 13px
+  font-weight: 400
   border-radius: 10px
   background-color: $main-color
   border: none
   padding: 19px 30px 17px 30px
   transition: 0.2s
   &:hover
-    border: 1px solid red
     background-color: lighten($main-color, 20%)
     cursor: pointer
 
-@media (max-width: 567px)
+@media (max-width: 320px)
+  .container
+    /* max-width: 750px */
+    width: 95%
+  .hero
+    padding: 0
+    
   .button
-    padding: 9px 15px
-
+    padding: 15px 26px 14px 26px
+    font-size: 10px
+    font-weight: 400
+    margin-right: 23px
+    margin-left: 49px
+  .navbar__logo
+    & img
+      width: 91px
+      height: 44px
+      margin-left: 20px
+      
+  .text-title
+    font-size: 24px
+    font-weight: 400
+    line-height: 5px
+    padding-top: 20px
+    margin-bottom: 25px
+    font-family: 'Museo Sans Bold'
+    
 .section
   padding: 90px 0
 

@@ -1,3 +1,5 @@
+*
+  box-sizing: border-box
 .navbar
   padding: 7px 0
   &-block
@@ -19,14 +21,15 @@
   
   &__phone
     font-size: 20px
-    font-weight: 400
+    font-weight: 400px
     font-family: 'Museo Sans Bold'
     color: $text-color
     text-decoration: none
     margin-top: 9px
     display: inline-block
+    
   &__phone:hover
-    text-decoration: underline
+    cursor: pointer
 
 @media (max-width: 768px) 
   .navbar
