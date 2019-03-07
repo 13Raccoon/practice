@@ -218,7 +218,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 0;
   background-color: #fff;
 }
 
@@ -411,7 +410,11 @@
   padding-top: 100px;
 }
 
-.slider img {
+.slider {
+  margin-bottom: 46px;
+}
+
+.slider__img {
   margin: auto;
 }
 
@@ -482,7 +485,7 @@ body {
     padding: 15px 26px 14px 26px;
     font-size: 10px;
     font-weight: 400;
-    margin-right: 23px;
+    /* margin-right: 23px */
     margin-left: 49px;
   }
   .offer-block {
@@ -529,6 +532,23 @@ body {
   }
   .section {
     padding: 0;
+  }
+  .portfolio-title {
+    padding-top: 43px;
+    margin-bottom: 41px;
+  }
+  .portfolio__arrows {
+    padding-bottom: 64px;
+  }
+  .slider {
+    margin-bottom: 46px;
+  }
+  .slider__img {
+    /* margin: auto */
+    display: inline-block;
+  }
+  .slider__img {
+    width: 246px;
   }
 }
 
