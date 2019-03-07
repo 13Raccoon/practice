@@ -218,6 +218,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
   background-color: #fff;
 }
 
@@ -406,9 +407,11 @@
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
   margin-bottom: 100px;
+  margin-top: 0;
+  padding-top: 100px;
 }
 
-.slider__img {
+.slider img {
   margin: auto;
 }
 
