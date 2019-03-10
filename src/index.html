@@ -117,9 +117,9 @@
           <span class="section-subtitle offer-subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
           <!-- /.section-subtitle -->
         
-        <form action="#" class="form offer-form">
-          <input type="text" class="imput offer-input" placeholder="Ваше имя">
-          <input type="tel" class="imput offer-input" placeholder="Ваш телефон">
+        <form action="#" id="offer-form" class="form offer-form">
+          <input type="text" name="username" class="imput offer-input" placeholder="Ваше имя">
+          <input type="tel" name="phone" class="imput offer-input phone" placeholder="Ваш телефон">
           <button class="button offer-button">Получить бесплатный дизайн-проект</button>
         </form>
         <!-- /.form offer-forn -->
@@ -287,9 +287,10 @@
       <div class="form brif__form">
         <h3 class="form__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h3>
         <span class="form__subtitle">Для этого заполните форму ниже</span>
-        <form action="#">
-          <input type="text" name="username" required class="input brif__input" placeholder="Ваше имя">
-          <input type="tel" class="input brif__input" placeholder="Ваш телефон">
+        <form action="#" id="brif-form">
+          <input type="text" name="username" class="input brif__input" placeholder="Ваше имя">
+          <input type="tel" name="phone" class="input brif__input phone" placeholder="Ваш телефон">
+          <input type="email" name="email" class="input brif__input" placeholder="Ваш email">
           <button class="button brif__button">Расчитать стоимость</button>
           <span class="form__description">Мы перезвоним Вам в течение 60 секунд</span>
         </form>
@@ -309,8 +310,32 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/modal.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
   <script>
     $(document).ready(function(){
+      $('#brif-form', '#offer-form').validate({
+        rules:{
+          username: {
+            required: true,
+            minlength: 2            
+          },
+          phone: {
+            required: true
+            
+          },
+          email: {
+            required: true,
+            email: true
+          }
+        },
+        messages: {
+          username: "Введите имя",
+          phone: "Введите телефон",
+          email: "Введите email",
+        }
+      });
+      $('.phone').mask('+7 (999) 999-99-99');
       $('.slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
