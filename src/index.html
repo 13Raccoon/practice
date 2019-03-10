@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
   
@@ -53,18 +54,18 @@
 
           <div class="text-low">
             <ul class="block-low">
-              <li class="list">
+              <li class="list wow fadeInLeft delay-1s">
                 <img src="img/clock.svg" alt="" class="low-img">
                 <span class="span-text">Точно соблюдаем сроки</span>
               </li>
           
-              <li class="list">
+              <li class="list wow fadeInLeft delay-2s">
                 <img src="img/calc.png" alt="">
                 <span class="span-text">Рассчитаем смету на работы
                   и материалы в день обращения</span>
               </li>
           
-              <li class="list">
+              <li class="list wow fadeInLeft delay-3s">
                 <img src="img/palette.svg" alt="">
                 <span class="span-text">Предложим более 100 вариантов
                   исполнения дизайна Вашего жилья</span>
@@ -178,7 +179,7 @@
     <span class="section-subtitle price_subtitle">Прайс на наши услуги</span>
     <!-- /.section-subtitle price__subtitle -->
     <div class="cards">
-      <div class="card price__card">
+      <div class="card price__card wow zoomIn delay-1s">
         <div class="card__img"><img src="img/badroom.jpg" alt="" class="img__img"></div>
         <!-- /.card__img -->
         <div class="card__text">
@@ -190,7 +191,7 @@
         <!-- /.card__text -->
       </div>
       <!-- /.card -->
-      <div class="card price__card">
+      <div class="card price__card wow zoomIn delay-1s">
         <div class="card__img"><img src="img/apartments.jpg" alt="" class="img__img"></div>
         <!-- /.card__img -->
         <div class="card__text">
@@ -202,7 +203,7 @@
         <!-- /.card__text -->
       </div>
       <!-- /.card -->
-      <div class="card price__card">
+      <div class="card price__card wow zoomIn delay-1s">
         <div class="card__img"><img src="img/office.jpg" alt="" class="img__img"></div>
         <!-- /.card__img -->
         <div class="card__text">
@@ -214,7 +215,7 @@
         <!-- /.card__text -->
       </div>
       <!-- /.card -->
-      <div class="card price__card">
+      <div class="card price__card wow zoomIn delay-1s">
         <div class="card__img"><img src="img/room1.jpg" alt="" class="img__img"></div>
         <!-- /.card__img -->
         <div class="card__text">
@@ -226,7 +227,7 @@
         <!-- /.card__text -->
       </div>
       <!-- /.card -->
-      <div class="card price__card">
+      <div class="card price__card wow zoomIn delay-1s">
         <div class="card__img"><img src="img/kitchen.png" alt="" class="img__img"></div>
         <!-- /.card__img -->
         <div class="card__text">
@@ -238,7 +239,7 @@
         <!-- /.card__text -->
       </div>
       <!-- /.card -->
-      <div class="card price__card">
+      <div class="card price__card wow zoomIn delay-1s">
         <div class="card__img"><img src="img/house.png" alt="" class="img__img"></div>
         <!-- /.card__img -->
         <div class="card__text">
@@ -256,7 +257,10 @@
   <!-- /.container -->
 </section>
 <!-- /.section price -->
-
+<script src="js/wow.min.js"></script>
+<script>
+  new WOW().init()
+</script>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/modal.js"></script>
 <script src="js/slick.min.js"></script>
