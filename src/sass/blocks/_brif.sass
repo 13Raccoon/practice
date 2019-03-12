@@ -11,6 +11,8 @@
     margin-bottom: 15px
     width: 100%
     max-width: 370px
+    outline: none
+ 
   &__button
     height: 70px
     width: 100%
@@ -106,11 +108,17 @@
       padding-top: 45px
     &__form
       margin-top: 80px
+    &__button
+      display: block
+      margin: auto
+      padding: 8px 15px 8px 15px
+    
   .interview
     padding-right: 10px
     &__title
       font-size: 18px
       margin-bottom: 10px
+      margin-top: 60px
     &__subtitle
       margin-bottom: 20px
     &-list
@@ -126,6 +134,8 @@
     &__subtitle
       margin-bottom: 20px
 
+
+
 @media (max-width: 320px)
   .brif
     background-image: url('../img/brif-color-bg.jpg'), url('../img/brif-bg.jpg')
@@ -139,6 +149,7 @@
       padding-top: 45px
     &__form
       margin-top: 80px
+   
   .interview
     padding-right: 10px
     &__title
@@ -153,6 +164,8 @@
         padding-right: 10px
       &__counter
         margin-right: 15px
+  .brif__button
+    margin: auto
         
   .form
     &__title
@@ -162,3 +175,5 @@
       margin-bottom: 20px
   .brif__button
     margin: auto
+    width: 275px
+    height: 70px    

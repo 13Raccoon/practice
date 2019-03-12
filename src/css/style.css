@@ -256,6 +256,7 @@
   border: 1px solid #dddddd;
   margin-bottom: 30px;
   width: 240px;
+  outline: none;
 }
 
 .offer-input:first-child {
@@ -391,7 +392,13 @@
 }
 
 .modal-dialog-close:hover {
-  background-color: green;
+  background-color: #ffd200;
+  outline: none;
+}
+
+.button__modal {
+  outline: none;
+  border-radius: none;
 }
 
 .portfolio {
@@ -548,6 +555,7 @@
   margin-bottom: 15px;
   width: 100%;
   max-width: 370px;
+  outline: none;
 }
 
 .brif__button {
@@ -695,12 +703,18 @@
   .brif__form {
     margin-top: 80px;
   }
+  .brif__button {
+    display: block;
+    margin: auto;
+    padding: 8px 15px 8px 15px;
+  }
   .interview {
     padding-right: 10px;
   }
   .interview__title {
     font-size: 18px;
     margin-bottom: 10px;
+    margin-top: 60px;
   }
   .interview__subtitle {
     margin-bottom: 20px;
@@ -758,6 +772,9 @@
   .interview-list__counter {
     margin-right: 15px;
   }
+  .brif__button {
+    margin: auto;
+  }
   .form__title {
     font-size: 18px;
     margin-bottom: 10px;
@@ -767,6 +784,85 @@
   }
   .brif__button {
     margin: auto;
+    width: 275px;
+    height: 70px;
+  }
+}
+
+.footer {
+  position: relative;
+}
+
+.map {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+}
+
+.contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-top: 100px;
+  padding-left: 200px;
+}
+
+.contacts__title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 100px;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts-list {
+  padding: 0;
+  list-style: none;
+}
+
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 23px;
+}
+
+.contacts-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 39px;
+}
+
+.contacts-list__text a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.bold {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 780px) {
+  .contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -793,6 +889,7 @@ body {
   padding: 19px 30px 17px 30px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  outline: none;
 }
 
 .button:hover {
@@ -853,11 +950,11 @@ body {
     font-size: 10px;
     font-weight: 400;
     /* margin-right: 23px */
-    margin-left: 49px;
+    /* margin-left: 49px */
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 320px) {
   .container {
     /* max-width: 750px */
     width: 95%;
@@ -874,7 +971,7 @@ body {
     font-size: 10px;
     font-weight: 400;
     /* margin-right: 23px */
-    margin-left: 49px;
+    /* margin-left: 49px */
   }
   .offer-block {
     padding-top: 5px;
