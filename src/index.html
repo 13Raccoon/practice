@@ -314,11 +314,12 @@
 <script src="js/jquery.maskedinput.min.js"></script>
   <script>
     $(document).ready(function(){
-      $('#brif-form', '#offer-form').validate({
+      $('#brif-form').validate({
         rules:{
           username: {
             required: true,
-            minlength: 2            
+            minlength: 2,  
+            maxlenght: 15          
           },
           phone: {
             required: true
@@ -332,7 +333,29 @@
         messages: {
           username: "Введите имя",
           phone: "Введите телефон",
-          email: "Введите email",
+          email: "Введите корректный email",
+        }
+      });
+      $('#offer-form').validate({
+        rules:{
+          username: {
+            required: true,
+            minlength: 2,  
+            maxlenght: 15          
+          },
+          phone: {
+            required: true
+            
+          },
+          email: {
+            required: true,
+            email: true
+          }
+        },
+        messages: {
+          username: "Введите имя",
+          phone: "Введите телефон"
+          
         }
       });
       $('.phone').mask('+7 (999) 999-99-99');
