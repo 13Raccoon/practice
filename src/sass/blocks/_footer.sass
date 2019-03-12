@@ -38,6 +38,29 @@
 .bold
   +bold
 
+
+  
 @media (max-width: 780px)
-  .contacts
+  .map-contacts
+    display: flex
     flex-direction: column
+    
+  .map
+    display: flex
+    position: relative
+    width: 100%
+    order: 1 
+  .contacts-block
+    justify-content: flex-start
+  .contacts
+    padding-top: 67px
+    padding-left: 60px
+    align-items: center
+    &__title
+      margin-bottom: 38px
+
+@media (max-width: 320px)
+  .contacts
+    flex-basis: 100%
+    font-size: 18px
+    padding-left: 20px
