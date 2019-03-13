@@ -263,6 +263,10 @@
   margin-right: 10px;
 }
 
+.offer-input:novalidate {
+  border-color: red;
+}
+
 .support {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -296,6 +300,14 @@
   cursor: pointer;
 }
 
+.offer-form #phone-error {
+  padding-left: 300px;
+}
+
+.offer-form #username-error {
+  padding-left: 10px;
+}
+
 @media (max-width: 1200px) {
   .offer {
     background-size: cover;
@@ -305,7 +317,7 @@
   }
   .offer-input {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
   .support {
     display: -webkit-box;
@@ -320,6 +332,9 @@
   .support-text {
     width: 100%;
     margin: 0 0 18px 0;
+  }
+  .offer-form #phone-error {
+    padding-left: 0;
   }
 }
 
@@ -1105,8 +1120,17 @@ body {
   cursor: pointer;
 }
 
-.error {
-  display: block;
-  margin-top: 5px;
+.invalid {
+  border: 1px solid red;
+}
+
+div.invalid, div.valid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  border: none;
+  color: red;
+  margin-top: -90px;
 }
 /*# sourceMappingURL=style.css.map */

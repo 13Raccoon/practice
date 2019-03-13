@@ -361,10 +361,16 @@
           }
         },
         messages: {
-          username: "Введите имя",
+          username: {
+            required: "Введите имя",
+            minlength: jQuery.validator.format("Не менее {0} символов!"),
+            maxlength: jQuery.validator.format("Не более {0} символов!")
+          },
           phone: "Введите телефон",
-          email: "Введите корректный email",
-        }
+          email: "Введите корректный email"
+        },
+        errorClass: "invalid",
+        errorElement: "div"
       });
       $('#offer-form').validate({
         rules:{
@@ -383,10 +389,16 @@
           }
         },
         messages: {
-          username: "Введите имя",
+          username: {
+            required: "Введите имя",
+            minlength: jQuery.validator.format("Не менее {0} символов!"),
+            maxlength: jQuery.validator.format("Не более {0} символов!")
+          },
           phone: "Введите телефон"
           
-        }
+        },
+        errorClass: "invalid",
+        errorElement: "div"
       });
       $('.phone').mask('+7 (999) 999-99-99');
       $('.slider').slick({

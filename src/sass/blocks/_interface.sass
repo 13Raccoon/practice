@@ -175,7 +175,13 @@ body
   &:hover
     cursor: pointer
 
-.error
-  display: block
-  margin-top: 5px
+.invalid
+  border: 1px solid red
+div
+  &.invalid, &.valid
+    display: flex
+    position: absolute
+    border: none
+    color: red
+    margin-top: -90px
   
