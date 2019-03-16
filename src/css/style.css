@@ -1031,7 +1031,8 @@ div.invalid, div.valid {
     padding-top: 45px;
   }
   .brif__form {
-    margin-top: 80px;
+    margin-top: 5px;
+    margin-right: 20px;
   }
   .interview {
     padding-right: 10px;
@@ -1231,6 +1232,7 @@ div.invalid, div.valid {
   }
   .card {
     width: 90%;
+    margin-bottom: 10px;
   }
   .contacts {
     font-size: 18px;
