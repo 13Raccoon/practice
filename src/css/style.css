@@ -655,6 +655,7 @@ template {
   font-family: 'Museo Sans Bold';
   max-width: 360px;
   margin-bottom: 24px;
+  text-align: left;
 }
 
 .offer-button {
@@ -941,6 +942,7 @@ template {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 100px;
 }
 
 .card {
@@ -1101,6 +1103,7 @@ template {
   font-weight: 700;
   font-display: auto;
   margin-bottom: 26px;
+  margin-left: 10px;
 }
 
 .interview-list__counter {
@@ -1626,13 +1629,19 @@ div.invalid, div.valid {
   .interview__subtitle {
     margin-bottom: 20px;
   }
+  .interview-list {
+    padding-bottom: 5px;
+  }
   .interview-list__text {
-    font-size: 10px;
+    font-size: 14px;
     max-width: 300px;
-    padding-right: 10px;
+    padding-right: 0;
+    padding-left: 0;
   }
   .interview-list__counter {
-    margin-right: 15px;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
   .brif__button {
     margin: auto;
@@ -1809,8 +1818,8 @@ div.invalid, div.valid {
   .interview-list__text {
     padding-left: 20px;
   }
-  .three {
-    width: 45px;
+  .three, .too {
+    width: 40px;
   }
   .card {
     width: 90%;
@@ -1819,11 +1828,16 @@ div.invalid, div.valid {
   .contacts {
     font-size: 18px;
     margin-right: 23px;
-    /* margin-right: 23px */
-    /* margin-left: 49px */
   }
   .contacts__title {
     font-size: 18px;
+  }
+  .price {
+    /* margin-right: 23px */
+    /* margin-left: 49px */
+  }
+  .price_title {
+    padding-top: 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */
